@@ -1,0 +1,160 @@
+.main_div{
+    background: rgba(0, 0, 0, 0.4);
+    margin-left: 10%;
+    margin-right:10%;
+    margin-bottom: 70px;
+    /* border: 1px solid red; */
+    border-radius: 20PX;
+    width: 80%;
+    margin-top: 5%;
+    
+}
+.header_div{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.header_div:hover{
+    color: gray;
+}
+.sub_div{
+    
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    padding-left: 20px;
+}
+.content_div{
+    color: white;
+    font-weight: bolder;
+    width: 45%;
+    height: 40px;
+    padding: 20px;
+    display: inherit;
+    /* border: 1px solid red; */
+    /* border: 1px solid black; */
+    /* border-color: ; */
+}
+span{
+    float: left;
+    font-size: 28px;
+    padding-top: 10px;
+}
+.alert-success{
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+input{
+    color: white;
+    margin: auto;
+    padding: 10px;
+    margin-right: 30px;
+    left: 43px;
+    font-size: 25px;
+    padding-right: 35px;
+    border-radius: 10px;
+    border: 1px white solid;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+
+    background-color: white;
+}
+select{
+    color: white;
+    margin-top: -20px;
+    font-size: 25px;
+    /* left: 80px; */
+    padding-right: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.4);
+}
+textarea{
+    color: white;
+    font-size: 25px;
+    width: 80%;
+    height: 120px;
+    margin-left: 30px;
+    max-width: 80%;
+    resize: none;
+    padding: 15px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    background-color: rgba(0,0,0,0.4);
+    border: 1px white solid;
+}
+.description{
+    font-weight: bolder;
+    color: white;
+    padding: 40px;
+}
+.leave_date{
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+}
+.leave_date_input{
+    float: left;
+    margin-top: 10px;
+}
+.leave_date_from_to{
+    margin-bottom: 100px;
+}
+
+.btn_leave{
+    font-size: 25px;
+    margin-left:43% ;
+    margin-bottom: 50px;
+    padding: 15px 30px;
+    outline: none;
+    color: rgb(246, 246, 246);
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    background: black;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn_leave:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+/* .leave_date_from{
+    padding: 20px;
+}
+.leave_date_to{
+    padding: 20px;
+} */
+
+/* .show_status{
+    text-decoration: none;
+    color:black;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;   
+    font-weight:bolder;
+    margin-left: 1350px;
+    margin-top: -1px;
+    border: 1px white solid;
+    transition: 0.2s
+}
+.show_status:hover{
+    background-color: black;
+    font-weight:bolder;
+    color: white;
+    border: 1px black solid;
+} */

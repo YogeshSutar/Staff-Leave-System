@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* nav bar style */
+
+.navbar {
+    padding: 0%;
+    margin: 0;
+}
+
+.navbar123 {
+    /* position: fixed; */
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul li a {
+    font-weight: bolder;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    text-decoration: none;
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.815);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 246, 166);
+    transition: 0.6s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav p {
+    color: white;
+    font-size: 40px;
+    margin-left: 150px;
+    margin-top: -57px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/* sign up form css */
+
+.registrationform {
+    background-color: rgba(41, 41, 41, 0.592);
+    width: 800px;
+    height: 519px;
+    padding: 25px 25px;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.registrationform h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 1px;
+    padding-bottom: 15px;
+}
+
+.registrationform h1:hover {
+    color: rgb(255, 115, 0);
+    transition: 0.4s;
+}
+
+
+/* for line */
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input {
+    width: calc(100% / 2 - 20px);
+    /* background-color: rgba(255, 255, 255, 0.13); */
+    padding: 10px;
+}
+input::-webkit-input-placeholder{
+    color: rgba(25, 25, 25, 0.782);
+}
+
+.box {
+    font-size: 25px;
+border-radius: 10px;
+border: 1px white solid;
+    height: 40px;
+    width: 350px;
+    padding: 10px 20px;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
+.spanvalue {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding: 10px 0px;
+}
+
+.btnreg {
+    /* float: right; */
+    font-size: 20px;
+    margin: 0px 10px;
+    padding: 10px 27px;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: none;
+}
+
+#line {
+    text-decoration: none;
+}
+
+.btnreg:hover {
+    color: black;
+    background: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+div input {
+    background-color: rgba(255, 255, 255, 0.13);
+    color: white;
+}
+
+.message {
+    color: #ffffff;
+}
+
+#message {
+    color: #ffffff;
+}

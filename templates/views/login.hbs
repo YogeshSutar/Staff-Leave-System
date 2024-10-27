@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body style=" background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+url('images/bg.jpg');
+background-position: center;
+justice-content:center;
+background-size: cover;">
+{{>navbar}}
+
+    <div class="registrationform">
+        <form class="container loginform" action="/login" method='POST'>
+        <h1>User Login</h1>
+      
+              <div class="input">
+              <span class="spanvalue" for="username"><b>Username :</b></span><br>
+              <input class="box" type="text" id="username" maxlength="50"  size="5" name="email" placeholder="Enter Your Username ( E-Mail )" required>
+              </div>
+      
+              <div class="input">
+              <span class="spanvalue" for="password"><b>Password  :</b></span><br>
+              <input class="box" type="password" id="password"  size="8" maxlength="20" name="password" placeholder="Enter Your Password" required>
+              <br>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <br>
+                <br>
+              </div>
+              <button type="submit" class="btnreg1"><b>Login</b></button>
+              <button type="submit" class="btnreg2" style="color:black;"><a href="signup" style="text-decoration: none; color:white;" class="signup">Signup</a></button>
+              <button type="submit" class="btnreg2" style="color:black;"><a href="admin" style="text-decoration: none; color:white;" class="admin">Admin</a></button>
+             {{!-- <button type="submit" class="btnreg3"> <a  href='#' style="text-decoration: none; color:white;">Forget Password</a></button> --}}
+             <!-- <button type="submit" class="btnreg3"> <a  href='admin.php' style="text-decoration: none; color:white;">Admin</a></button> -->
+             
+            </form>
+          </div>
+
+
+
+
+</body>
+</html>

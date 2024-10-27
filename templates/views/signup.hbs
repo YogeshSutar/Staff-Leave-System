@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<!-- <img src="./signup.jpg" alt=""> -->
+<body style=" background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+url('images/bg.jpg');
+background-position: center;
+background-size: cover;">
+{{>navbar}}
+    <div class="registrationform">
+        <form action="/registers" method="POST">
+            <h1>SIGN UP</h1>
+            <div class="details">
+                <div class="input">
+                    <span class="spanvalue">Full Name :</span>
+                    <input class="box" type="text" id="name" size='5' maxlength='40' name="name"
+                        placeholder="Enter Your Name"  >
+                </div>
+
+                <div class="input">
+                    <span class="spanvalue">Email_id :</span>
+                    <input class="box" type="email" id="email" name="email" placeholder="Enter Your Email" ><br>
+
+
+                </div>
+
+                {{!-- <div class="input">
+                    <span class="spanvalue">Phone Number :</span>
+                    <input class="box" type="" id="phone" name="phone" maxlength="10" size="10"
+                        placeholder="Enter Your Number"  >
+                </div> --}}
+
+<div class="input">
+    <span class="spanvalue">Phone Number :</span>
+    <input class="box" type="tel" id="phone" name="phone" maxlength="10" size="10"
+        placeholder="Enter Your 10-digit Number" pattern="[0-9]{10}" required>
+</div>
+
+
+
+
+
+<!-- 
+                <div class="input">
+                    <span class="spanvalue" for="username">Username :</span>
+                    <input class="box" type="text" id="username" maxlength="20" size="5" name="username"
+                        placeholder="Enter Your Username"  >
+                    <span id="uexists"><b>Username Already Exists</b></span>
+
+                </div> -->
+
+                <div class="input">
+                    <span class="spanvalue" for="password">Password :</span>
+                    <input class="box" type="password" id="password" size="8" maxlength="20" name="password"
+                        placeholder="Enter Your Password"  >
+
+
+                </div>
+
+                <div class="input">
+                    <span class="spanvalue" for="cpassword">Confirm Password :</span>
+                    <input class="box" type="password" id="confirm_password" name="cpassword"
+                        placeholder="Enter Confirm Password"  >
+
+
+                </div>
+                
+            </div>
+            <button style=" margin-left:42%;" class="btnreg btn" href="#" id="btn" class="registerbtn"><b>register</b></button>
+            </from>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

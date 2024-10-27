@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/staff_leave.css">
+    {{!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> --}}
+    <title>Staff Leave Page</title>
+</head>
+<style>
+    body{
+        background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/leavepage.jpg");
+        background-position: center;
+        background-size:cover;
+    }
+    .succesmsg{
+        color: white;
+        background-color: rgb(22, 155, 22);
+        text-align: center;
+
+        font-size: 30px;
+        border-radius:20px ;
+        margin-top: 20px;
+        margin-bottom: -30px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+</style>
+<body>
+{{>navbar}}
+
+
+{{!-- {{ if(success !='' { ) }} --}}
+{{!-- <div class="alert alert-success"  role="alert">
+  <strong>Details Successfully Submited !... </strong> {{ success }}
+</div> --}}
+{{!-- {{ } }} --}}  
+<a class="link" href="/staff_status" style="text-decoration: none;">Staff Status</a>
+
+          <h2 class="succesmsg">{{success}}</h2>
+<form action="/staffleave" method="POST">
+
+<div class="main_div">
+    <div class="header_div">
+        <h1>Staff Leave</h1>
+    </div>
+    <div class="sub_div">
+        <div class="content_div">
+            <span>Name : </span>
+
+            <input class="input_box" type="" name="name" autocomplete="off" value="{{#each userdata}}{{name}}{{/each}}" id="name" required>
+        </div>
+        <div class="content_div">
+            <span>Email Id : </span>
+            
+            <input class="input_box" type="text" name="email" id="email" value="{{#each userdata}}{{email}}{{/each}}" required>
+        </div>
+        <div class="content_div">
+            {{!-- <span>
+                Dept. Name :
+                <select name="" id="" name="Dept_name" id="dept" required>
+                <option value="">Select Department Name</option>
+                <option value="Casual Leave">MCA</option>
+                <option value="Sick Leave">MBA</option>
+                </select>
+            </span> --}}
+            <span>Dept. Name : </span>
+            <input type="text" class="input_box" name="Dept_name" id="dept" required>
+        </div>
+        <div class="content_div">
+            <span>
+                Type Of Leave :
+                <select name="" id="" name="leavetype" required>
+                <option value="">Select Leave Type</option>
+                <option value="Casual Leave">Casual Leave</option>
+                <option value="Sick Leave">Sick Leave</option>
+                <option value="Sick Leave">Other</option>
+                </select>
+            </span>
+
+        </div>
+
+        <div class="content_div">
+            <span> No. Of Days : </span>
+            <input type="number" class="input_box" name="numberofdays" id="days" required>
+        </div>
+
+
+    </div>
+        <div class="description">
+            <span> Description : </span>
+            <textarea name="description" id="" cols="30" rows="3" maxlength="350" ></textarea>
+            {{!-- <input type="text"> --}}
+        </div>
+        <div class="leave_date_from_to">
+            <span class="leave_date"> Leave Date </span>
+            <div>
+            <span class="leave_date">From :</span>
+            <input type="date" name="leaveDateFrom" class="leave_date_input" required>
+            <span class="leave_date">To :</span>
+            <input type="date" name="leaveDateTo" id="curdate" class="leave_date_input" required>
+            <script>
+                var date = new Date();
+                var tdate = date.getDate(); // show date
+                var month = date.getMonth() + 1; // show previous month
+                if(tdate < 10){
+                    tdate = "0" + tdate; // added 0 if date is in single digit (03,04,05,....)
+                }
+                if(month < 10){
+                    month = "0" + month; // added 0 if month is in single digit (03,04,05,....)
+                }
+
+                var year = date.getUTCFullYear(); // current year
+                var minDate = year +"-"+ month +"-"+ tdate
+                document.getElementById("curdate").setAttribute('min',minDate)
+                console.log(minDate);
+            </script>
+        </div>
+        </div>
+        
+        <button class="btn_leave" id="leavemsg" >Leave</button>
+<script>
+    document.getElementById("leavemsg").addEventListener("click",()=>{
+        var name = document.getElementById("name").value
+        var email = document.getElementById("email").value
+        var dept = document.getElementById("dept").value
+        var days = document.getElementById("days").value
+        if(name && email && dept && days == value){
+        alert("leave send");
+        }
+
+    })
+
+</script>
+</div>
+</form>
+
+
+
+</body>
+</html>

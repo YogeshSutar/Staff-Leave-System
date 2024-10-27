@@ -1,0 +1,276 @@
+
+.sidenav{
+    
+border: 1px solid red;
+display: flex;
+/* padding: 20px; */
+text-decoration: none;
+cursor: pointer;
+}
+
+nav ul{
+    float: right;
+}
+
+
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* nav bar style */
+
+.navbar {
+    padding: 0%;
+    margin: 0;
+}
+
+.navbar123 {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(photo/video1.mp4);
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul li a {
+    font-weight: bolder;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    text-decoration: none;
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.815);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 246, 166);
+    transition: 0.6s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.silder {
+    background-image: url(photo/video1.mp4);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    /* animation: zoom 40s ease-in-out infinite; */
+}
+
+.header{
+    padding: 20px;
+    color: white;
+    padding-top: 200px;
+}
+.welpibm{
+    padding: 20px;
+    /* padding-left: 6%; */
+}
+.pibm{
+    font-size: 25px;
+}
+
+.KES{
+    margin-top: -20px;
+    padding: 20px;
+    /* padding-left: 6%; */
+    /* margin-right: 20px; */
+}
+
+.clg_name{
+    padding: 20px;
+    font-size: 65px;
+    transition: 0.3s;
+}
+.clg_name:hover{
+    /* font-size: 70px; */
+    color: antiquewhite;
+}
+.leave_header{
+    padding: 20px;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 195, 165);
+
+}
+.short_info{
+    display: flex;
+  /* border: 1px solid red; */
+  padding:20px;
+    margin-top: 20px;
+}
+.imageside{
+/* border: 1px red solid; */
+padding: 20px;
+/* float: left; */
+display: inline;
+/* width: 40%; */
+margin-left: 25px;
+}
+.clgimg{
+    width: 900px;
+    height: 500px;
+}
+.textside{
+    background-color: rgb(179, 11, 11);
+    /* border: 1px red solid; */    
+padding: 20px;
+/* float: right; */
+flex: 1;
+width: 30%;
+margin-right: 70px;
+margin-top: 30px;
+height: 400px;
+}
+.textside h1{
+    color: white;
+    font-size: 40px;
+}
+
+.textside p{
+    font-size: 25px;
+    color: rgb(190, 190, 190);
+}
+
+/* second image  */
+
+.imageside_sec{
+    /* border: 1px red solid; */
+    padding: 20px;
+    /* float: left; */
+    display: inline;
+    /* width: 40%; */
+    margin-right: 50px;
+    }
+
+.textside_sec{
+    background-color: rgb(179, 11, 11);
+    /* border: 1px red solid; */    
+padding: 20px;
+/* float: left; */
+flex: 1;
+/* width: 30%; */
+margin-left: 45px;
+margin-top: 30px;
+height: 420px;
+}
+
+.textside_sec h1{
+    color: white;
+    font-size: 40px;
+}
+
+.textside_sec p{
+    font-size: 25px;
+    color: rgb(190, 190, 190);
+}
+.boxes{
+    margin: 20px;
+    /* padding-left: 20px; */
+    /* border: 1px rgb(0, 0, 0) solid; */
+    display: flex;
+    padding: 20px;
+
+}
+.box1{
+    border: 1px rgb(0, 0, 0) solid;
+    padding: 20px;
+    margin: 20px;
+    width: 85%;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.box2{
+    padding: 20px;
+    margin: 20px;
+    width: 85%;
+    border-radius: 20px;
+    transition: 0.4s;
+    border: 1px rgb(0, 0, 0) solid;
+
+}
+.box3{
+    padding: 20px;
+    margin: 20px;
+    width: 85%;
+    border-radius: 20px;
+    transition: 0.4s;
+    border: 1px rgb(0, 0, 0) solid;
+}
+.boxes h1{
+    color: red;
+}
+
+.boxes p{
+    font-size: 20px;
+}
+.box1:hover{
+    background-color: rgb(235, 235, 231);
+    border: 1px solid rgb(235, 235, 231);
+    color: rgb(0, 0, 0);
+}
+.box2:hover{
+    background-color: rgb(235, 235, 231);
+    border: 1px solid rgb(235, 235, 231);
+    color: rgb(0, 0, 0);
+}
+.box3:hover{
+    background-color: rgb(235, 235, 231);
+    border: 1px solid rgb(235, 235, 231);
+    color: rgb(0, 0, 0);
+}
+
+
+.Footer{
+    text-align:center;
+    padding:20px;
+    background-color:#252154;
+}
+.follow-info h2{
+    color:white;
+    font-weight:bold;
+}
+.follow-info p{
+    color:white;
+    /* font-weight:bold; */
+    word-spacing:2px;
+    letter-spacing:1px;
+}
+
+.icons{
+    padding: 10px;
+}
+.icons a{
+    font-size:36px;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+}

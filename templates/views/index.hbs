@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  {{!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    {{!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> --}}
+    {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> --}}
+    {{!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> --}}
+    {{!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> --}}
+
+  <title>Document</title>
+</head>
+<style>
+
+  </style>
+<body>
+
+  {{!-- {{>navbar}} --}}
+  <nav class="navbar123">
+    <img src="images/logo.png" alt="" width="100px" height="60px">
+    <ul>
+  <li>
+              <a class="link" href="about" style="text-decoration: none;">ABOUT US</a>
+</li>
+  {{#if hidepage}}
+          {{!-- <li>
+            <a class="link" href="/" style="text-decoration: none;">HOME</a>
+          </li> --}}
+{{!-- <h1>{{firstName}} {{lastName}}</h1> --}}
+          <li>
+            <a class="link" href="AdminCheckStatus" style="text-decoration: none;">ADMIN STATUS</a>
+          </li>
+          <li>
+            <a class="link" href="logoutadmin"  id="logout" style="text-decoration: none;">LOGOUT ADMIN</a>
+          </li>
+{{else}}         
+
+          {{#if hideuserlogout}}
+                    {{!-- <li>
+            <a class="link" href="/index" style="text-decoration: none;">HOME</a>
+          </li> --}}
+              {{!-- <li>
+            <a class="link" href="" style="text-decoration: none;">HOME</a>
+          </li> --}}
+          <li>
+            <a class="link" href="leave" style="text-decoration: none;">STAFF LEAVE</a>
+          </li>
+          <li>
+            <a class="link" href="logout"  id="userlogout" style="text-decoration: none;">LOGOUT</a>
+          </li>
+        
+          {{else}}
+
+          <li>
+            <a class="link" href="login" style="text-decoration: none;">LOGIN</a>
+          </li>
+          {{/if}}
+{{/if}}
+        </ul>
+
+</nav>
+
+    <div>
+        <!-- <img href="about.php"  src="images/logo.jpg"  alt="" width="90px" height="60"> -->
+        <!-- <img class="header" src="images/relax2.jpg" alt=""></img> -->
+        <!-- <header class="slider" style=" background-image: url(images/relax2.jpg)"></header> -->
+        <header class="silder" style="background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(images/homepage.jpg) no-repeat center;     background-size: cover;">
+        {{!-- <img src="images/header.png" alt=""> --}}
+
+            <div class="header">
+  <h3 class="welpibm">Welcome to <b class="pibm"> PIBM </b></h3>
+<h2 class="KES">Kamala Education Society’s</h2>
+<h1 class="clg_name">Pratibha Institute of Business Management</h2>
+
+
+<h1 class="leave_header">Staff Leave System</h1>
+            </div>
+    </div>
+<hr width="90%" style="margin-left:70px; margin-right:30px; margin-top:40px;">
+
+<div class="short_info">
+  <div class="imageside">
+    <img class="clgimg" src="images/clgimage.jpg" alt="">
+  </div>
+  <div class="textside">
+    <br>
+<h1>Welcome To PIBM </h1>
+<br>
+    <p>
+      <b>About our university</b><br><br>
+Pratibha Institute of Business management is a centre of academic excellence located in the heart of Pune (pimpri-chinchwad) in an extensive state-of-the-art campus by the eminent academic and research oriented minds who impart integrated knowledge.
+    </p>
+  </div>
+</div>
+
+<div class="short_info">
+  <div class="textside_sec">
+    <br>
+<h1>VISION </h1>
+<br>
+    <p>
+      <b>About our university</b><br><br>
+To become a leading business school for its excellence in technology driven management that caters to the management development capabilities and entrepreneurship development of the aspirants in the collaboration with the business organization that provides the platform for the business development.
+    </p>
+  </div>
+  <div class="imageside_sec">
+    <img class="clgimg" src="images/header.png" alt="">
+  </div>
+</div>
+<br>
+<hr width="90%" style="margin-left:70px; margin-right:30px;">
+<div class="boxes">
+  <div class="box1">
+
+  <i class="fa fa-group" style="font-size:24px"></i>
+
+    <h1>Staff</h1>
+    <br>
+    <p>
+He will have an interface of the home page where at one part he has the option of applying for leave and another part as see the request status. <br> 
+He can apply for the leave by entering in that and picking the date from date pickers and giving the other important attributes in that. <br>
+Now he can confirm the leave request then it goes to the admin panel.
+</p>
+  </div>
+  <div class="box2">
+    	
+      <i class="fas fa-user-cog" style="font-size:24px"></i>
+    <h1>Admin</h1>
+      <br>
+    <p>
+        Here admin has the option shown to him to see the request and other approved requests.
+        <br>
+He will see the requests here and do the necessary action as needed.
+  </p>
+  </div>
+  <div class="box3">
+
+      <i class="fas fa-user-clock" style="font-size:24px"></i>
+
+    <h1>Leave</h1>
+      <br>
+     <p>
+     Here is the module for applying for leave to the interface. One has to enter his details about the leave like the reason for the leave.
+<br>
+Choose the dates of the leave. Depending upon the user’s account and policy of the company or premise the cost of the leave is calculated and shown to the interface.
+  </p>
+  </div>
+</div>
+
+<div class="Footer">
+    <div class="follow-info">
+        <h2>Follow Us on</h2>
+        <p>you can ask us with clicking this Follow us link. </p>
+    </div>
+    <div class="icons">
+
+<a class='fab fa-facebook-square' href="https://www.facebook.com/groups/975027449194354/"></a>
+<a class='fab fa-twitter-square' href="https://twitter.com/pratibhapune?lang=en"></a>
+<a class='fab fa-instagram' href="https://www.instagram.com/pratibha_institute/?igshid=jw9n3dx5cpg8"></a>
+    </div>
+
+</div>
+</body>
+</html>
